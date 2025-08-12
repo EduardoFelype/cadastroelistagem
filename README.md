@@ -1,19 +1,63 @@
-# 🎈 Blank app template
+Sistema de Ordens de Serviço
+Um sistema simples para gerenciamento de ordens de serviço, desenvolvido com Streamlit, SQLite e Pandas. Permite cadastrar, listar, editar, deletar ordens e importar dados a partir de planilhas Excel.
 
-A simple Streamlit app template for you to modify!
+Funcionalidades
+Dashboard com métricas e gráficos de ordens por situação e prioridade.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Cadastro manual de ordens de serviço.
 
-### How to run it on your own machine
+Listagem com filtros por situação, prioridade e cliente.
 
-1. Install the requirements
+Importação de ordens via arquivo Excel.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+Edição e exclusão de ordens cadastradas.
 
-2. Run the app
+Persistência de dados usando SQLite.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+Tecnologias
+Python 3.8+
+
+Streamlit
+
+Pandas
+
+Plotly
+
+SQLite
+
+Requisitos
+Instale as dependências via pip:
+
+
+pip install streamlit pandas plotly openpyxl
+Como usar
+Clone o repositório ou copie os arquivos.
+
+Instale as dependências.
+
+Execute o app:
+
+
+streamlit run app.py
+Navegue pelo menu lateral para usar as funcionalidades.
+
+Importação de Excel
+O arquivo deve conter colunas como:
+
+Descrição d/operação → Nome do Cliente
+
+Denominação produto → Descrição do Serviço
+
+Criado em → Data de Abertura
+
+Status → Situação (ex: concluído, pendente)
+
+Observações
+O banco SQLite é criado localmente no arquivo ordens_servico.db.
+
+Ao importar Excel, é possível optar por limpar dados existentes ou ignorar duplicatas.
+
+Prioridade padrão das importações é "média".
+
+Contato
+Qualquer dúvida ou sugestão, entre em contato!
